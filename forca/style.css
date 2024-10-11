@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#wordContainer {
+    font-size: 24px;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+/* Desenho da forca */
+.forca {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 0 auto 20px;
+}
+
+.pole {
+    position: absolute;
+    background-color: #663300;
+    width: 10px;
+    height: 250px;
+    left: 10px;
+    bottom: 0;
+}
+
+.beam {
+    position: absolute;
+    background-color: #663300;
+    width: 120px;
+    height: 10px;
+    top: 50px; /* Mover a viga para baixo */
+    left: 10px;
+}
+
+.base {
+    position: absolute;
+    background-color: #663300;
+    width: 150px;
+    height: 10px;
+    bottom: 0;
+    left: 0;
+}
+
+/* Rope */
+.rope {
+    position: absolute;
+    background-color: #000;
+    width: 3px;
+    height: 40px;
+    top: 60px; /* Mover a corda um pouco para baixo */
+    left: 120px; /* Posição ajustada para ficar no centro */
+}
+
+/* Partes do boneco aprimorado */
+#head {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 50%;
+    top: 100px; /* Mover a cabeça mais para baixo */
+    left: 100px;
+}
+
+#body {
+    position: absolute;
+    width: 6px;
+    height: 70px;
+    background-color: black;
+    top: 140px; /* Mover o corpo mais para baixo */
+    left: 117px;
+}
+
+#leftArm, #rightArm {
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background-color: black;
+    top: 160px; /* Mover os braços mais para baixo */
+}
+
+#leftArm {
+    left: 67px;
+    transform: rotate(-30deg);
+}
+
+#rightArm {
+    left: 117px;
+    transform: rotate(30deg);
+}
+
+#leftLeg, #rightLeg {
+    position: absolute;
+    width: 6px;
+    height: 50px;
+    background-color: black;
+    top: 210px; /* Mover as pernas mais para baixo */
+}
+
+/* Ajuste das pernas para ficarem simétricas */
+#leftLeg {
+    left: 110px; /* Posição mais próxima do corpo */
+    transform: rotate(0deg); /* Ângulo ajustado para ficar mais natural */
+}
+
+#rightLeg {
+    left: 120px; /* Posição mais para a direita para simetria */
+    transform: rotate(0deg); /* Ângulo ajustado para ficar mais natural */
+}
+
+/* Esconde o boneco até que seja revelado */
+.invisible {
+    visibility: hidden;
+}
+
+#keyboard button {
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eee;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#keyboard button:hover {
+    background-color: #ddd;
+}
+
+#keyboard button:disabled {
+    background-color: #bbb;
+    cursor: not-allowed;
+}
+
+#restartBtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#restartBtn:hover {
+    background-color: #0056b3;
+}
