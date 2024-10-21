@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Fios e Tomadas</title>
+    <link rel="stylesheet" href="serio.css">
+</head>
+<body>
+
+    <h1 class="title">Projeto UFCD 6052 - Ligação de uma Lâmpada</h1>
+    <h2 class="subtitle">Arraste os fios para os locais corretos</h2>
+
+    <div id="message" class="message"></div>
+
+    <div class="container">
+        <div class="power-socket" id="socket1" data-type="neutro">Neutro</div>
+        <div class="power-socket" id="socket2" data-type="fase">Fase</div>
+        <div class="power-socket" id="socket3" data-type="terra">Terra</div>
+        <div class="wires">
+            <div class="wire" id="wire-blue" draggable="true"></div>
+            <div class="wire" id="wire-brown" draggable="true"></div>
+            <div class="wire" id="wire-green" draggable="true"></div>
+        </div>
+        
+        <img id="failure-gif" src="crying.gif" alt="Failure GIF" style="display: none; position: fixed; top: 70%; left: 70%; transform: translate(-50%, -50%); z-index: 9999; max-width: 100%; max-height: 50%;">
+        <img id="success2-gif" src="200w.gif" alt="Success2 GIF" style="display: none; position: fixed; top: 30%; left: 30%; transform: translate(-50%, -50%); z-index: 9999; max-width: 50%; max-height: 50%;">
+        <img id= "success-gif" src="77f00932fd46bf24ec6046f373898fd7.gif" alt="Success GIF" style="display: none; position: fixed; top: 70%; left: 70%; transform: translate(-50%, -50%); z-index: 9999; max-width: 50%; max-height: 50%;">
+        <img id="failure2-gif" src="beer-icegif-15.gif" alt="Failure2 GIF" style="display: none; position: fixed; top: 30%; left: 30%; transform: translate(-50%, -50%); z-index: 9999; max-width: 50%; max-height: 50%;">
+        <img id="success3-gif" src="shrek.gif" alt="Success3 GIF" style="display: none; position: fixed; top: 70%; left: 10%; transform: translate(-50%, -50%); z-index: 9999; max-width: 30%; max-height: 30%;">
+        <img id="failure3-gif" src="sad.gif" alt="Failure3 GIF" style="display: none; position: fixed; top: 20%; left: 70%; transform: translate(-50%, -50%); z-index: 9999; max-width: 30%; max-height: 30%;">
+        <img id="failure4-gif" src="triste.gif" alt="Failure4 GIF" style = "display: none; position: fixed; top: 70%; left: 10%; transform: translate(-50%, -50%); z-index: 9999; max-width: 30%; max-height: 30%;">
+        <img id="success4-gif" src="xBIijr.gif" alt="Success4 GIF" style="display: none; position: fixed; top: 20%; left: 70%; transform: translate(-50%, -50%); z-index: 9999; max-width: 30%; max-height: 30%;">
+        <img id="success5-gif" src="4GJK8y.gif" alt="Success5 GIF" style="display: none; position: fixed; top: 80%; left: 30%; transform: translate(-50%, -50%); z-index: 9999; max-width: 30%; max-height: 30%;">
+
+
+        <div class="lamp" id="lamp">Lampada</div>
+        <button id="reset-button">Reiniciar</button>
+
+        <audio id="explosion-sound" src="sadtrombone.swf.mp3" loop></audio> <!-- Adicione este elemento -->
+        <audio id="success-sound" src="victory_fanfare.mp3" loop ></audio> 
+        <audio id="opening-sound" src="mario_OonFijd.mp3" loop></audio>
+    </div>
+    <script src="serio.js"></script>
+</body>
+</html>

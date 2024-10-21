@@ -1,0 +1,180 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    color: white; /* Adiciona cor ao texto */
+    font-family: Arial, sans-serif; /* Fonte mais legível */
+    margin: 0;
+    padding-top: 100px; /* Adiciona espaço para o título */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title, .subtitle {
+    position: absolute;
+    top: 10px; /* Posiciona no topo */
+    width: 100%; /* Ocupa toda a largura */
+    text-align: center; /* Centraliza o texto */
+    margin: 0; /* Remove margem padrão */
+}
+
+.title, .subtitle {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.title {
+    top: 10px; /* Posiciona o título no topo */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.subtitle {
+    top: 50px; /* Posiciona o subtítulo logo abaixo do título */
+    font-size: 18px;
+}
+
+.message {
+    position: absolute;
+    top: 90px; /* Posiciona logo abaixo do subtítulo */
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+}
+
+.power-socket {
+    width: 180px;
+    height: 80px;
+    background-color: #ccc;
+    margin: 20px;
+    border: 2px solid #888;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.power-socket span {
+    position: absolute;
+    font-weight: bold;
+}
+
+.wires {
+    display: flex;
+    flex-direction: column;
+}
+
+.wire {
+    width: 100px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/* Estilo para o fio azul */
+#wire-blue {
+    width: 150px; /* Largura do fio */
+    height: 50px; /* Altura do fio */
+    background-image: url('kisspng-light-electrical-conductor-electrical-wires-cabl-colorful-wire-5add7680217313.436742521524463232137-removebg-preview.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+#wire-brown {
+    width: 150px; /* Largura do fio */
+    height: 50px; /* Altura do fio */
+    background-image: url('1200px-Color_wire_brown.svg-removebg-preview.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#wire-green {
+    width: 150px; /* Largura do fio */
+    height: 50px; /* Altura do fio */
+    background-image: url('2560px-Color_wire_green_yellow.svg-removebg-preview.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+/* Posicionar o botão no canto superior esquerdo */
+#reset-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Estilo da lâmpada */
+.lamp {
+    background-image: url('png-transparent-light-bulb-illustration-incandescent-light-bulb-lamp-bulb-candle-product-light-thumbnail-removebg-preview.png');
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    width: 150px; /* Ajuste o tamanho da largura */
+    height: 200px; /* Ajuste o tamanho da altura */
+
+}
+
+/* Estado ativo da lâmpada */
+.lamp.active {
+    background-image: url('png-transparent-incandescent-light-bulb-graphy-lighting-bulb-light-photography-innovation-business-removebg-preview.png');
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    width: 150px; /* Ajuste o tamanho da largura */
+    height: 200px; /* Ajuste o tamanho da altura */
+    filter: brightness(1.2); /* Aumenta o brilho da imagem */
+    transition: all 0.3s ease-in-out; /* Transição suave para o efeito */
+    
+}
+
+/* Estado explodido da lâmpada */
+.lamp.exploded {
+    background-image: url('png-transparent-retro-broken-bulb-shattered-retro-light-bulb-thumbnail-removebg-preview.png'); /* Substitua pelo caminho correto da imagem */
+    background-size: cover; /* Garante que a imagem ocupe todo o espaço */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    width: 3000px; /* Ajuste o tamanho da largura */
+    height: 250px; /* Ajuste o tamanho da altura */
+    
+}
